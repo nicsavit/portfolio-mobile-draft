@@ -1,0 +1,130 @@
+/* BODY AND HEADER */
+body {  
+    font-family: 'Lora', serif;
+    background-color: #EEE2DC;
+    font-size: 16pt;
+}
+
+header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid black;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+} 
+/* NAVIGATION */
+nav{ 
+    padding: 25px 0;    
+    text-align: center;   
+  }
+.nav_links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav_item a{
+  text-decoration: none;
+}
+.nav_item a:visited {
+  color: black;
+}
+.nav_item a:hover{
+  background-color: #d8bfd8;
+  text-decoration: underline black;
+}
+#current{
+    background-color:thistle;
+    font-weight: bold;
+}
+/* INDEX GRID */
+.about-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto; 
+}
+.about-container p{
+  grid-column: 1;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* .about-image {
+  grid-column: 2;
+  width: 50px;
+   height: 75px;
+} */
+
+/* EXPERIENCES GRID */
+.experince-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto; 
+  justify-content: center;
+  align-items: center;
+}
+.experience-item {
+  width: 100%;
+  height: 100%;
+  grid-row: span 1;
+  padding: 10px;
+ 
+}
+.experience-item h2{
+  background: white;
+  border: 2px solid black;
+  
+}
+/* PHOTO JOURNAL GRID */
+.journal-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.journal_image {
+    
+    border: 1px solid #555;
+    color: #AAA;
+    width: 100%;
+    height: 100%;
+    
+  }
+/* CONTACT GRID */
+.contact-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto; 
+  justify-content: space-evenly;
+  /* grid-gap: 50px; */
+}
+.email {
+  grid-column: 1;
+}
+.phone {
+  grid-column: 2;
+}
+.contact-item{
+
+  width: 100%;
+  height: 100%;
+  grid-row: span 1;
+  
+}
+
+  
+footer{
+  padding: 20px;
+  text-align: center;
+}
